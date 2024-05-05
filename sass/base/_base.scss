@@ -1,0 +1,55 @@
+/*--------------------BASIC RESET-----------------------
+        Basic definitions about entire proyect
+*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* definimos un tamano inicial y entonces podemos aplicar el rem a los valores de los elementos que teniamos en pixel, 10px = 1rem*/
+  /*the default font-size is 16pixels*/
+  /*use px is not a good practice*/
+  /*font-size: 10px;*/
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  //ORDER OF INCLUDES: the last one of declaration that will be applied
+
+  @include respond(tab-land) {
+    // widht < 1200
+    font-size: 56.25%; //1rem= 9px, 9/16 = 56.25%
+  }
+
+  @include respond(tab-port) {
+    // width < 900px
+    font-size: 50%; //1rem = 8px, 8/16 =50%
+  }
+  /*
+    @include respond(phone) {
+        font-size: 30%; 
+    }*/
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem=12px, 12/16=75%
+  }
+}
+
+body {
+  box-sizing: border-box;
+  /*padding: 30px;*/
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
+
+/*chamge the color when you select some text*/
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
