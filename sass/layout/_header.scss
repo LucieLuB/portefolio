@@ -2,10 +2,10 @@
   height: 85vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-primary-light, 0.801),
-      rgba($color-primary-dark, 0.801)
+      rgba(0, 0, 0, 0.801),
+      rgba(255, 255, 255, 0.801)
     ),
-    url(../img/hero-small.jpg);
+    url(../img/ux-ui-design.jpg);
   background-size: cover;
   background-position: top;
   position: relative; /* conect with de header*/
@@ -43,14 +43,11 @@
 
   &__logo-box {
     position: absolute;
-    /*top: 40px;
-        left: 40px;*/
     top: 4rem;
     left: 4rem;
   }
 
   &__logo {
-    /*height: 35px;*/
     height: 3.5rem;
   }
 
@@ -63,7 +60,3 @@
   }
 }
 
-/*MISMA ANIMACION PARA EL ESTADO HOVER DEL LOGO
-.logo:hover{
-    animation: moveInRight 1s;
-}*/
