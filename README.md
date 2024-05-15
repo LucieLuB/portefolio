@@ -1,4 +1,4 @@
-# COMMAND LINE
+# COMMAND LINE test
 
 npm run compile:sass
 
@@ -12,7 +12,6 @@ This file is a partial. So we have to import it into main.scss
 ## ABSTRACT
 
 This folder we put code that's not going to output any css. Code like Variables, mixin...
-
 
 ## COMPONENTS
 
